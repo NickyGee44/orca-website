@@ -92,7 +92,7 @@ export default function AboutPage() {
           <p className="mt-2 text-foreground/80">There are no upfront or monthly payments. The savings we recover from your vendors will pay for the entire service in year one. Orca is one of the best freight audit companies providing this option. Simply give us a call to start saving.</p>
           <div className="mt-4">
             <Link href="/contact">
-              <ShimmerButton background="rgba(0,0,0,1)" className="px-5 py-3 text-sm">Let's talk</ShimmerButton>
+              <ShimmerButton background="rgba(0,0,0,1)" className="px-5 py-3 text-sm">Let&apos;s talk</ShimmerButton>
             </Link>
           </div>
         </section>

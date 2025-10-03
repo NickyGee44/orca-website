@@ -39,7 +39,7 @@ export const BentoCard = ({
   <a
     href={href}
     className={`group relative col-span-1 flex flex-col justify-between overflow-hidden rounded-xl bg-background border border-foreground/10 shadow-sm hover:shadow-md transition-shadow ${className}`}
-    {...(props as any)}
+    {...props}
   >
     {background && <div>{background}</div>}
     <div className="p-4">

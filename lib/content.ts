@@ -24,7 +24,7 @@ export function loadPage<T = unknown>(slug: string): T {
 
 export function seoMetadataFrom(slug: string): Seo | null {
   try {
-    const data = loadPage<any>(slug) as { seo?: Seo };
+    const data = loadPage<{ seo?: Seo }>(slug);
     return data?.seo ?? null;
   } catch {
     return null;

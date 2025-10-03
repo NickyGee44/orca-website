@@ -25,10 +25,12 @@ function Icon() {
   );
 }
 
+type ServiceData = { title: string; intro: string; benefits: string[]; features: string[]; cta: { label: string; href: string } };
+
 export default function ServicePage({ params }: { params: { slug: string } }) {
   const { slug } = params;
   if (!valid.has(slug)) return notFound();
-  const data = loadPage<any>(`services/${slug}`);
+  const data = loadPage<ServiceData>(`services/${slug}`);
 
   return (
     <main className="w-full py-16 sm:py-20">
@@ -43,13 +45,13 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           <div>
             <h2 className="text-lg font-semibold text-foreground">Benefits</h2>
             <ul className="mt-3 space-y-2">
-              {data.benefits.map((b: string) => (<li key={b} className="flex items-start gap-2 text-sm text-foreground/80"><Icon /><span>{b}</span></li>))}
+              {data.benefits.map((b) => (<li key={b} className="flex items-start gap-2 text-sm text-foreground/80"><Icon /><span>{b}</span></li>))}
             </ul>
           </div>
           <div>
             <h2 className="text-lg font-semibold text-foreground">Features</h2>
             <ul className="mt-3 space-y-2">
-              {data.features.map((f: string) => (<li key={f} className="flex items-start gap-2 text-sm text-foreground/80"><Icon /><span>{f}</span></li>))}
+              {data.features.map((f) => (<li key={f} className="flex items-start gap-2 text-sm text-foreground/80"><Icon /><span>{f}</span></li>))}
             </ul>
           </div>
         </section>
@@ -57,5 +59,3 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
     </main>
   );
 }
-
-

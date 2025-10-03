@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import { loadPage } from "../lib/content";
+import { loadPage, type HomeContent } from "../lib/content";
 import AboutOrca from "../components/AboutOrca";
 import SolutionAndAudience from "../components/SolutionAndAudience";
 import Overcharged from "../components/Overcharged";
@@ -9,13 +9,9 @@ import FAQ from "../components/FAQ";
 import IntroOverlay from "../components/IntroOverlay";
 import ServicesGrid from "../components/ServicesGrid";
 import SavingsCalculator from "../components/SavingsCalculator";
-import Subnav from "../components/Subnav";
-import LogoTicker from "../components/LogoTicker";
-import Metrics from "../components/Metrics";
-import ComparisonTabs from "../components/ComparisonTabs";
 
 export default function Home() {
-  const home = loadPage<any>("home");
+  const home = loadPage<HomeContent>("home");
   return (
     <main id="main">
       <IntroOverlay />

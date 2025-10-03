@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { loadPage } from "../../lib/content";
+import { loadPage, type BlogContent } from "../../lib/content";
 
-const data = loadPage<any>("blog");
+const data = loadPage<BlogContent>("blog");
 
 export const metadata: Metadata = {
   title: data.seo.title,
@@ -26,7 +26,7 @@ export default function BlogPage() {
 
         <h2 className="mt-8 text-xl font-semibold text-foreground">Latest Articles</h2>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-          {latest.map((p: any) => (
+          {latest.map((p) => (
             <article key={p.title} className="overflow-hidden rounded-xl border border-foreground/10 bg-foreground/5">
               <div className="relative h-44 w-full">
                 <Image src={p.image} alt="" fill className="object-cover" />
@@ -42,7 +42,7 @@ export default function BlogPage() {
 
         <h2 className="mt-10 text-xl font-semibold text-foreground">All Articles</h2>
         <div className="mt-4 space-y-4">
-          {posts.map((p: any) => (
+          {posts.map((p) => (
             <article key={p.title} className="flex gap-3 rounded-xl border border-foreground/10 bg-foreground/5 p-3">
               <div className="relative h-24 w-36 shrink-0 overflow-hidden rounded-md">
                 <Image src={p.image} alt="" fill className="object-cover" />

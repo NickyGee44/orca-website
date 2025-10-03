@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { loadPage } from "../../lib/content";
 import FAQSchema from "../../components/FAQSchema";
 
-const meta = loadPage<any>("faq");
+const meta = loadPage<{ seo: { title: string; description: string; canonical: string } }>("faq");
 
 export const metadata: Metadata = {
   title: meta.seo.title,
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function FaqPage() {
-  const data = loadPage<any>("faq");
+  const data = loadPage<{ items: Array<{ q: string; a: string }> }>("faq");
   return (
     <main className="w-full py-16 sm:py-20">
       <FAQSchema items={data.items} />
@@ -19,7 +19,7 @@ export default function FaqPage() {
         <h1 className="text-3xl font-semibold tracking-tight text-foreground">Freight Audit FAQ | Implementation, Savings, Integrations</h1>
         <p className="mt-2 text-foreground/70 text-sm sm:text-base max-w-3xl">Answers on carriers supported, SLAs, implementation, reporting, and pricing model.</p>
         <div className="mt-6 divide-y divide-foreground/10 rounded-xl border border-foreground/10 bg-foreground/5">
-          {data.items.map((it: any, idx: number) => (
+          {data.items.map((it, idx) => (
             <details key={idx} className="group p-4">
               <summary className="flex cursor-pointer list-none items-center justify-between text-foreground/90">
                 <span className="text-sm sm:text-base">{it.q}</span>

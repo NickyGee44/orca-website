@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ShimmerButton } from "../../components/ui/ShimmerButton";
 import { loadPage } from "../../lib/content";
 
-const metaDataFile = loadPage<any>("responsibility");
+const metaDataFile = loadPage<{ seo: { title: string; description: string; canonical: string } }>("responsibility");
 export const metadata: Metadata = {
   title: metaDataFile.seo.title,
   description: metaDataFile.seo.description,
@@ -33,7 +33,7 @@ export default function ResponsibilityPage() {
           <p className="text-foreground/80">Our key value is people over profits. We believe that corporations have a social responsibility to support worthy causes and help make the world a better place. Today, 1 in 5 kids will experience a mental health challenge, and they need our help more than ever before.</p>
           <p className="text-foreground/80">We are proud to partner with Capitalize for Kids to help more children gain access to the mental healthcare they need. Through initiatives in the financial services community, Capitalize for Kids ensures leading mental health organizations can get access to critical funding and pro-bono services. Together, we are helping children spend less time looking for help and more time getting better.</p>
           <div className="mt-4">
-            <Link href="/contact"><ShimmerButton background="rgba(0,0,0,1)" className="px-5 py-3 text-sm">Let's talk</ShimmerButton></Link>
+            <Link href="/contact"><ShimmerButton background="rgba(0,0,0,1)" className="px-5 py-3 text-sm">Let&apos;s talk</ShimmerButton></Link>
           </div>
         </section>
 

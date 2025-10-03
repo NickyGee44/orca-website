@@ -41,7 +41,7 @@ export default function IntroOverlay({ lottieData, durationMs = 1400 }: IntroOve
     };
 
     const tryFetch = async () => {
-      let data: any | null = null;
+      let data: unknown | null = null;
       try {
         const r1 = await fetch("/intro.json", { cache: "no-store" });
         if (r1.ok) data = await r1.json();
@@ -100,7 +100,7 @@ export default function IntroOverlay({ lottieData, durationMs = 1400 }: IntroOve
           {lottieData || autoLottie ? (
             <div className="w-72 sm:w-[22rem]">
               <Lottie
-                animationData={(lottieData as any) ?? autoLottie}
+                animationData={lottieData ?? autoLottie}
                 loop={false}
                 autoplay
                 speed={playbackSpeed}

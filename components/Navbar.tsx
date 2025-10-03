@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { createPortal } from "react-dom";
-import ThemeToggle from "./ThemeToggle";
 import { AnimatedThemeToggler } from "../components/ui/AnimatedThemeToggler";
 import { ShimmerButton } from "../components/ui/ShimmerButton";
 import { navConfig } from "../config/nav";

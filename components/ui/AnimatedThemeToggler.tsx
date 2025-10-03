@@ -32,7 +32,7 @@ export const AnimatedThemeToggler = ({ className = "" }: Props) => {
 
     // View transition supported in Chromium-based browsers
     // Fallback gracefully if unavailable
-    const startVT = (document as any).startViewTransition?.bind(document);
+    const startVT = (document as { startViewTransition?: (callback: () => void) => { ready: Promise<void> } }).startViewTransition?.bind(document);
 
     const run = async () => {
       flushSync(() => {

@@ -21,7 +21,7 @@ interface HeroVideoProps {
   className?: string;
 }
 
-const animationVariants: Record<string, any> = {
+const animationVariants: Record<string, { initial: Record<string, unknown>; animate: Record<string, unknown>; exit: Record<string, unknown> }> = {
   "from-bottom": {
     initial: { y: "100%", opacity: 0 },
     animate: { y: 0, opacity: 1 },

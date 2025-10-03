@@ -23,8 +23,9 @@ function Icon({ name }: { name: string }) {
   }
 }
 
+type FAAData = { hero: { title: string; subtitle: string; cta: { label: string; href: string } }; positioning: string; whyDifferent: string; benefits: string[]; features: { audit: string[]; analytics: string[] }; cta: { label: string; href: string } };
 export default function FAAOverviewPage() {
-  const data = loadPage<any>("freight-audit-analytics");
+  const data = loadPage<FAAData>("freight-audit-analytics");
   return (
     <main className="w-full py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-6 space-y-10">
@@ -42,7 +43,7 @@ export default function FAAOverviewPage() {
         <section>
           <h2 className="text-xl font-semibold text-foreground">Key Benefits</h2>
           <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {data.benefits.map((b: string) => (
+            {data.benefits.map((b) => (
               <div key={b} className="flex items-start gap-3 rounded-xl border border-foreground/10 bg-foreground/5 p-3">
                 <Icon name="check" />
                 <span className="text-sm text-foreground/80">{b}</span>
@@ -55,13 +56,13 @@ export default function FAAOverviewPage() {
           <div>
             <h3 className="text-lg font-semibold text-foreground flex items-center gap-2"><Icon name="audit"/> Audit</h3>
             <ul className="mt-3 space-y-2">
-              {data.features.audit.map((f: string) => (<li key={f} className="flex items-start gap-2 text-sm text-foreground/80"><Icon name="check"/><span>{f}</span></li>))}
+              {data.features.audit.map((f) => (<li key={f} className="flex items-start gap-2 text-sm text-foreground/80"><Icon name="check"/><span>{f}</span></li>))}
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-foreground flex items-center gap-2"><Icon name="analytics"/> Analytics</h3>
             <ul className="mt-3 space-y-2">
-              {data.features.analytics.map((f: string) => (<li key={f} className="flex items-start gap-2 text-sm text-foreground/80"><Icon name="check"/><span>{f}</span></li>))}
+              {data.features.analytics.map((f) => (<li key={f} className="flex items-start gap-2 text-sm text-foreground/80"><Icon name="check"/><span>{f}</span></li>))}
             </ul>
           </div>
         </section>
@@ -71,5 +72,3 @@ export default function FAAOverviewPage() {
     </main>
   );
 }
-
-

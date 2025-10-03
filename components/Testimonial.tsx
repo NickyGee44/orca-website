@@ -1,7 +1,7 @@
 import { loadPage } from "../lib/content";
 
 export default function Testimonial() {
-  const home = loadPage<any>("home");
+  const home = loadPage<{ testimonial?: { title?: string; quote?: string; cite?: string } }>("home");
   return (
     <section id="testimonial" className="w-full py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-6">

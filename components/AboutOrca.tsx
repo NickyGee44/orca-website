@@ -2,7 +2,7 @@ import { HeroVideoDialog } from "./ui/HeroVideoDialog";
 import { loadPage } from "../lib/content";
 
 export default function AboutOrca() {
-  const home = loadPage<any>("home");
+  const home = loadPage<{ aboutTeaser?: { title?: string; subtitle?: string; body?: string; cta?: { label?: string; href?: string } } }>("home");
   return (
     <section id="about" className="w-full py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-6 grid gap-10 sm:grid-cols-2 items-start">

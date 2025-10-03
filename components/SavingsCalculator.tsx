@@ -19,7 +19,7 @@ const RANGES: RangeItem[] = [
   { label: "$20,000,000+", audit: 630000, contract: 4500000 },
 ];
 
-function useCountUp(target: number, deps: any[] = [], durationMs = 700) {
+function useCountUp(target: number, deps: unknown[] = [], durationMs = 700) {
   const [value, setValue] = useState(0);
   const startRef = useRef<number | null>(null);
   const fromRef = useRef(0);
