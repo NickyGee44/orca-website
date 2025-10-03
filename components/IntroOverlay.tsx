@@ -41,7 +41,7 @@ export default function IntroOverlay({ lottieData, durationMs = 1400 }: IntroOve
     };
 
     const tryFetch = async () => {
-      let data: unknown | null = null;
+      let data: { fr?: number; ip?: number; op?: number } | null = null;
       try {
         const r1 = await fetch("/intro.json", { cache: "no-store" });
         if (r1.ok) data = await r1.json();
@@ -62,9 +62,9 @@ export default function IntroOverlay({ lottieData, durationMs = 1400 }: IntroOve
 
       const computedMs = (() => {
         try {
-          const fr = (data?.fr as number) ?? null;
-          const ip = (data?.ip as number) ?? null;
-          const op = (data?.op as number) ?? null;
+          const fr = data?.fr ?? null;
+          const ip = data?.ip ?? null;
+          const op = data?.op ?? null;
           if (fr && ip !== null && op !== null) {
             const ms = ((op - ip) / fr) * 1000;
             const sped = ms / playbackSpeed;
