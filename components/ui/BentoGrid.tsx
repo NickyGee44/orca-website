@@ -5,7 +5,7 @@ type BentoGridProps = ComponentPropsWithoutRef<"div"> & {
   className?: string;
 };
 
-type BentoCardProps = ComponentPropsWithoutRef<"div"> & {
+type BentoCardProps = Omit<ComponentPropsWithoutRef<"a">, "href"> & {
   name: string;
   className?: string;
   background?: ReactNode;
