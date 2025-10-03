@@ -103,7 +103,6 @@ export default function IntroOverlay({ lottieData, durationMs = 1400 }: IntroOve
                 animationData={lottieData ?? autoLottie}
                 loop={false}
                 autoplay
-                speed={playbackSpeed}
                 onComplete={() => {
                   setShow(false);
                 }}
