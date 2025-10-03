@@ -1,0 +1,46 @@
+{
+  "seo": {
+    "title": "Freight Audit & Analytics Company | Orca Intelligence Inc",
+    "description": "Get full supply chain visibility and be more profitable. Modern freight audit, data cleansing, and reporting to cut costs and speed decisions.",
+    "canonical": "/freight-audit-analytics"
+  },
+  "hero": {
+    "title": "Freight Audit & Analytics",
+    "subtitle": "Get full supply chain visibility and be more profitable.",
+    "cta": { "label": "Let's talk", "href": "/contact" }
+  },
+  "positioning": "Orca Freight Audit & Analytics is a modern-day freight audit organization offering best-in-market freight audit, data cleansing, and analytical reporting for the lowest prices in the industry. Our integrated supply chain technology helps create efficiencies and reduce costs, empowering better, faster decisions.",
+  "whyDifferent": "Technology and process drive an efficient supply chain. We provide first-class technology and tailor our processes to your needs—minimal change to your operation, maximum insight. We don’t force you into our box; we fit your organization.",
+  "benefits": [
+    "ROI expected within one year",
+    "100% invoice accuracy",
+    "Higher profitability",
+    "One standard invoice for all vendors",
+    "Increased cash control",
+    "Full audit trail on every invoice",
+    "Full supply chain visibility",
+    "RFP response optimization",
+    "Increased data quality",
+    "FTE savings",
+    "On-demand financial reporting",
+    "Customizable Tableau dashboards"
+  ],
+  "features": {
+    "audit": [
+      "Automate manual audit steps: data collection, invoice review, reporting",
+      "Identify duplicate invoices",
+      "Verify base rates, discounts, and accessorials",
+      "Ensure tax compliance; correct fees and tariffs",
+      "Confirm final amount for accuracy before payment"
+    ],
+    "analytics": [
+      "Holistic network view: scorecards, cost-to-sell, GL analysis, budget tracking",
+      "Custom analysis; interactive reports and dashboards",
+      "Dynamic Tableau dashboards",
+      "Customized KPI tracking",
+      "Mobile access to supply chain data, anytime"
+    ]
+  },
+  "cta": { "label": "Let’s talk", "href": "/contact" }
+}
+

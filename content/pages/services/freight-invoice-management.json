@@ -1,0 +1,12 @@
+{
+  "seo": {
+    "title": "Freight Invoice Management | Centralize & Standardize",
+    "description": "One source of truth with audit trails and role‑based access.",
+    "canonical": "/services/freight-invoice-management"
+  },
+  "title": "Freight Invoice Management",
+  "intro": "Centralize, standardize, and accelerate. Get one source of truth with complete audit trails and configurable approvals.",
+  "benefits": ["99.9%+ accuracy targets across portfolios", "Less rework and faster closes", "Role‑based access for finance and logistics"],
+  "features": ["End-to-end invoice processing", "Audit trail and visibility", "Spend metrics and RFP insights"],
+  "cta": { "label": "Streamline my invoicing", "href": "/contact" }
+}

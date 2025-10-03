@@ -1,0 +1,12 @@
+{
+  "seo": {
+    "title": "Supply Chain Analytics | Dashboards & Benchmarks",
+    "description": "From carrier scorecards to SKU‑level landed costs—see everything in real time.",
+    "canonical": "/services/supply-chain-analytics"
+  },
+  "title": "Supply Chain Analytics",
+  "intro": "From carrier scorecards to SKU‑level landed costs, Orca gives you real‑time answers. Dashboards are customized to your KPIs and reviewed with you quarterly.",
+  "benefits": ["10–20% efficiency gains using analytics (target)", "Benchmarking across carriers and lanes", "Mobile access and alerts"],
+  "features": ["Carrier scorecards and comparisons", "SKU/customer and landed cost views", "Custom dashboards and KPI tracking"],
+  "cta": { "label": "Explore supply chain analytics", "href": "/contact" }
+}

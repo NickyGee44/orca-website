@@ -1,0 +1,12 @@
+{
+  "seo": {
+    "title": "Freight Rating & Optimization | Save 12–15%",
+    "description": "Compare carriers and modes in real time to balance cost and service.",
+    "canonical": "/services/freight-rating"
+  },
+  "title": "Freight Rating",
+  "intro": "Compare carriers and modes in real time to balance cost, speed, and reliability. Feed decisions back into audit and accruals.",
+  "benefits": ["12–15% average savings via smarter routing (target)", "Integrated with audit for post‑shipment validation", "Support for all major modes"],
+  "features": ["Side-by-side carrier comparisons", "Mode/terms coverage", "TMS integration and accrual support"],
+  "cta": { "label": "Optimize my freight rates", "href": "/contact" }
+}

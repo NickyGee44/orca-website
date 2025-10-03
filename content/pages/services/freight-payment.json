@@ -1,0 +1,12 @@
+{
+  "seo": {
+    "title": "Freight Payment Automation | 100% Pre‑Payment Checks",
+    "description": "Automate approvals, dispute handling, and remittance to protect cash flow.",
+    "canonical": "/services/freight-payment"
+  },
+  "title": "Freight Payment",
+  "intro": "Automate freight payables without losing control. Orca orchestrates approvals, due‑date scheduling, dispute handling, and remittance—so cash flows predictably.",
+  "benefits": ["100% pre‑payment checks", "40% less AP time on invoice handling (target)", "Live status for every invoice"],
+  "features": ["Automated payables with verification", "Real-time visibility and controls", "Audit trail and dispute management"],
+  "cta": { "label": "Talk to our payments team", "href": "/contact" }
+}

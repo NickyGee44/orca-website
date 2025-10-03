@@ -1,0 +1,74 @@
+{
+  "seo": {
+    "title": "FREIGHT AUDIT AND ANALYTICS BLOG | Orca Intelligence Inc",
+    "description": "Product insights, freight audit best practices, and supply chain analytics.",
+    "canonical": "/blog"
+  },
+  "posts": [
+    {
+      "title": "Is It Time To Audit Your Auditor?",
+      "blurb": "Your legacy freight auditor is likely compromising your profitability. Learn how to audit your auditor using 3 key criteria.",
+      "image": "/is-it-time-to-audit-your-auditor-post.png",
+      "href": "/blog/audit-your-auditor",
+      "author": "Nick Grossi",
+      "date": "2025-09-15"
+    },
+    {
+      "title": "Is Your Stack of Unconsolidated Freight Invoices Leaking Money?",
+      "blurb": "Learn the 10 key benefits of freight invoice consolidation and why it's critical to shipping cost control, visibility and bottom line savings.",
+      "image": "/is-your-stack-of-unconsolidated-freight-invoices-leaking-money.png",
+      "href": "/blog/unconsolidated-invoices",
+      "author": "Nick Grossi",
+      "date": "2025-08-22"
+    },
+    {
+      "title": "Are You Handing Over Your Profits to Your Carriers?",
+      "blurb": "Learn how end-to-end freight auditing, payment processing and discrepancy resolution can eliminate overpayments and increase profits.",
+      "image": "/block-bg.png",
+      "href": "/blog/handing-over-profits",
+      "author": "Nick Grossi",
+      "date": "2025-08-10"
+    },
+    {
+      "title": "How AI is Transforming Freight Audit Accuracy in 2025",
+      "blurb": "Discover how machine learning and AI-assisted anomaly detection are catching billing errors that traditional audits miss, delivering faster ROI and deeper insights.",
+      "image": "/block-bg.png",
+      "href": "/blog/ai-freight-audit-2025",
+      "author": "Nick Grossi",
+      "date": "2025-09-28"
+    },
+    {
+      "title": "The Hidden Cost of Accessorial Charges: A Data-Driven Analysis",
+      "blurb": "Accessorials now account for 30-40% of total freight spend. Learn how to identify leakage, negotiate better terms, and automate monitoring with real-time dashboards.",
+      "image": "/block-bg.png",
+      "href": "/blog/accessorial-charges-analysis",
+      "author": "Nick Grossi",
+      "date": "2025-09-20"
+    },
+    {
+      "title": "Scope 3 Emissions Tracking: Why Your Freight Data Holds the Key",
+      "blurb": "With new ESG reporting requirements, freight and logistics represent the largest portion of Scope 3 emissions. See how integrated carbon tracking saves costs while meeting compliance.",
+      "image": "/block-bg.png",
+      "href": "/blog/scope-3-freight-emissions",
+      "author": "Nick Grossi",
+      "date": "2025-09-05"
+    },
+    {
+      "title": "5 Red Flags Your Freight Audit Partner Isn't Delivering Value",
+      "blurb": "Not all freight auditors are created equal. Identify warning signs like delayed reporting, lack of transparency, and missed recoveries before they cost you millions.",
+      "image": "/block-bg.png",
+      "href": "/blog/freight-audit-red-flags",
+      "author": "Nick Grossi",
+      "date": "2025-08-18"
+    },
+    {
+      "title": "Real-Time Supply Chain Visibility: From Buzzword to Bottom-Line Impact",
+      "blurb": "Finance and logistics teams using real-time dashboards report 15-25% faster decision cycles. Learn how to implement visibility that drives profitability, not just pretty charts.",
+      "image": "/block-bg.png",
+      "href": "/blog/real-time-visibility-impact",
+      "author": "Nick Grossi",
+      "date": "2025-07-30"
+    }
+  ]
+}
+

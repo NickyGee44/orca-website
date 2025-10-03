@@ -1,0 +1,15 @@
+{
+  "seo": {
+    "title": "Freight FAQs | Orca Intelligence Inc",
+    "description": "Answers to common questions about Orca's services and solutions.",
+    "canonical": "/faq"
+  },
+  "items": [
+    { "q": "Which carriers and modes do you support?", "a": "All major parcel and freight modes (parcel, LTL, TL, ocean, air, rail). Carrier coverage and data connectors are confirmed during onboarding." },
+    { "q": "How long does implementation take?", "a": "Typical clients see first insights in weeks; full rollout depends on carrier/data integrations." },
+    { "q": "Do you guarantee savings?", "a": "We avoid blanket guarantees; instead, we run an upfront analysis and provide a model of expected recoveries and optimization." },
+    { "q": "How are you different from traditional auditors?", "a": "Unified audit + analytics, real‑time dashboards, and a partner model (custom reporting, quarterly reviews, on‑call support)." },
+    { "q": "How do you work with our finance team?", "a": "We centralize invoices, automate checks, and output clean data for AP and accounting (accruals, GL coding, audit trails)." },
+    { "q": "What does pricing look like?", "a": "Flexible commercial models designed to be covered by savings in year one whenever possible." }
+  ]
+}

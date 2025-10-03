@@ -1,0 +1,12 @@
+{
+  "seo": {
+    "title": "Freight Accounting | Accruals & GL Coding Automation",
+    "description": "Close faster with accurate accruals and reconciliations.",
+    "canonical": "/services/freight-accounting"
+  },
+  "title": "Freight Accounting",
+  "intro": "Generate accurate accruals and GL coding automatically, reconcile faster, and give finance the confidence it needs to forecast.",
+  "benefits": ["Days shaved off monthly/quarterly close", "Cleaner books and fewer adjustments", "Better budget vs. actuals visibility"],
+  "features": ["Rules-based accounting configuration", "Automated accrual generation", "GL code assignment and exports"],
+  "cta": { "label": "See freight accounting in action", "href": "/contact" }
+}

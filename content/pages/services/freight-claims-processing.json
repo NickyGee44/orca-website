@@ -1,0 +1,12 @@
+{
+  "seo": {
+    "title": "Freight Claims Processing | Faster Resolution",
+    "description": "File, manage, and resolve claims with real‑time visibility.",
+    "canonical": "/services/freight-claims-processing"
+  },
+  "title": "Freight Claims Processing",
+  "intro": "From filing to resolution, we manage claims at speed, maintain historical records, and keep you updated with real‑time status.",
+  "benefits": ["Faster recovery and fewer write‑offs", "End‑to‑end visibility for finance and ops", "Lower administrative burden"],
+  "features": ["Carrier liaison and resolution", "Status tracking and history", "Consolidated documentation"],
+  "cta": { "label": "Start automating claims", "href": "/contact" }
+}

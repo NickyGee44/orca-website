@@ -1,0 +1,29 @@
+{
+  "seo": {
+    "title": "About Orca | Freight Audit & Analytics Partner",
+    "description": "Know more. Spend less. Move faster with Orca's platform and services.",
+    "canonical": "/about"
+  },
+  "headline": {
+    "kicker": "KNOW MORE. SPEND LESS. MOVE FASTER.",
+    "title": "Orca is a partner, not a vendor.",
+    "cta": { "label": "Get My Free Savings Analysis", "href": "/contact" }
+  },
+  "whoIsOrca": {
+    "title": "Why Orca",
+    "body": "We bring together audit expertise, purpose‑built tooling, and custom analytics to reveal hidden costs, enforce contract terms, and guide smarter network decisions. From week one, your finance and logistics teams get a single source of truth—no more reconciling spreadsheets or chasing carriers.",
+    "image": { "src": "/orca_2296_rgb.png", "alt": "Matt Grossi & Marco Grossi Co-Founders of Orca" }
+  },
+  "values": [
+    { "title": "People Over Profits", "body": "Partnership mindset with 24/7 availability." },
+    { "title": "Knowledge Over Intuition", "body": "Decisions backed by clean, consolidated data." },
+    { "title": "Evolution Over Legacy", "body": "Modern stack, rapid iteration, measurable outcomes." },
+    { "title": "Innovation Over Everything", "body": "From AI‑assisted anomaly detection to Scope 3 metrics." }
+  ],
+  "outcomes": [
+    "Six‑figure recoveries identified at enterprise scale",
+    "Year‑one ROI targets with savings‑funded commercial model",
+    "Faster cycle times across AP, claims, and RFP workflows"
+  ]
+}
+

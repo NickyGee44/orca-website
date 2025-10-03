@@ -1,0 +1,24 @@
+{
+  "seo": {
+    "title": "Freight Audit & Analytics Platform | Orca Intelligence",
+    "description": "Stop overpaying for freight. Capture audit recoveries, automate payments, and unlock supply chain insights with Orca.",
+    "canonical": "/"
+  },
+  "hero": {
+    "title": "Stop Overpaying for Freight. Start Optimizing Every Mile.",
+    "subtitle": "Full supply chain visibility—from invoice audit to predictive analytics—so you can cut costs, eliminate errors, and make smarter decisions in weeks, not years.",
+    "primaryCta": { "label": "Get My Free Savings Analysis", "href": "/contact" },
+    "secondaryCta": { "label": "See How It Works", "href": "#about" }
+  },
+  "trustBar": "Trusted by teams at 3M Canada, Rogers Communications, Yokohama Tire, Toronto Blue Jays. Over $1B in freight audited annually.",
+  "valueProposition": {
+    "title": "Audit Accuracy Meets Actionable Analytics",
+    "body": "Most providers stop at catching billing errors. Orca goes further: we integrate with your finance and logistics workflows to deliver 100% pre‑payment accuracy checks, automated dispute resolution, and custom dashboards that surface carrier performance, accessorial leakage, and true landed costs."
+  },
+  "testimonial": {
+    "title": "How Orca Helps in the Real World",
+    "quote": "Orca's analytics helped us connect the dots in our supply chain. We act quickly and confidently, with full visibility day‑to‑day.",
+    "cite": "National Transportation Manager, Global Food Brand"
+  }
+}
+

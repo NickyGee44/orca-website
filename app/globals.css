@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --fx-grid: rgba(0,0,0,0.06);
+  --fx-spot: rgba(0,0,0,0.08);
+  --rays-color: rgba(0,0,0,0.12);
 }
 
 @theme inline {
@@ -10,17 +13,108 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --animate-shimmer-slide: shimmer-slide var(--speed) ease-in-out infinite alternate;
+  --animate-spin-around: spin-around calc(var(--speed) * 2) infinite linear;
+
+  @keyframes shimmer-slide { to { transform: translate(calc(100cqw - 100%), 0);} }
+  @keyframes spin-around {
+    0% { transform: translateZ(0) rotate(0); }
+    15%, 35% { transform: translateZ(0) rotate(90deg); }
+    65%, 85% { transform: translateZ(0) rotate(270deg); }
+    100% { transform: translateZ(0) rotate(360deg); }
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --fx-grid: rgba(255,255,255,0.07);
+  --fx-spot: rgba(255,255,255,0.08);
+  --rays-color: rgba(160,210,255,0.18);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Subtle text rendering + selection */
+html { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+::selection { background: rgba(0,0,0,.08); color:#000; }
+.dark ::selection { background: rgba(255,255,255,.12); color:#fff; }
+
+/* Ticker keyframes */
+@keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%);} }
+
+@media (prefers-color-scheme: dark) {
+  .shadow-ambient { box-shadow: 0 18px 50px rgba(0,0,0,.18) }
+}
+
+/* Sitewide gradient background with subtle texture */
+body {
+  /* Two radial dot layers + vertical gradient */
+  background-image:
+    radial-gradient(rgba(0,0,0,0.035) 1px, transparent 1px),
+    radial-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+    linear-gradient(180deg, #f3f4f6 0%, #e5e7eb 16%, #d1d5db 32%, #cbd5e1 48%, #a8b1c3 64%, #7b879a 80%, #475569 100%);
+  background-size:
+    22px 22px,
+    44px 44px,
+    auto;
+  background-position:
+    0 0,
+    11px 11px,
+    0 0;
+}
+
+.dark body {
+  background-image:
+    radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(180deg, #000000 0%, #0d0d0d 30%, #141414 60%, #1a1a1a 100%);
+  background-size:
+    22px 22px,
+    44px 44px,
+    auto;
+  background-position:
+    0 0,
+    11px 11px,
+    0 0;
+}
+
+/* Sleek animated data grid and spotlight accents */
+@keyframes fx-grid-shift { to { background-position: 60px 0, 0 60px; } }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, var(--fx-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--fx-grid) 1px, transparent 1px);
+  background-size: 60px 60px, 60px 60px;
+  opacity: .45;
+  animation: fx-grid-shift 24s linear infinite;
+  mask-image: radial-gradient(80% 60% at 50% 35%, black, transparent 75%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: -10%;
+  pointer-events: none;
+  background:
+    radial-gradient(1200px 600px at 50% -20%, var(--fx-spot), transparent 60%),
+    radial-gradient(800px 400px at 85% 120%, var(--fx-spot), transparent 60%);
+  mix-blend-mode: overlay;
+  opacity: .35;
+}
+
+/* View transition support for animated theme toggler */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
 }

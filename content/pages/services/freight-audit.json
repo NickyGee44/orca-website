@@ -1,0 +1,23 @@
+{
+  "seo": {
+    "title": "Freight Audit Company | Eliminate Overpayments",
+    "description": "Catch billing errors before payment, recover funds, and build a single source of truth with Orca.",
+    "canonical": "/services/freight-audit"
+  },
+  "title": "Freight Audit",
+  "intro": "Eliminate overspending with technology‑assisted auditing. We verify base rates, discounts, accessorials, and taxes; de‑dupe invoices; and catch discrepancies before funds are released.",
+  "benefits": [
+    "Higher invoice accuracy and fewer overpayments",
+    "Recoveries that fund ongoing transformation",
+    "Audit trail for finance and compliance"
+  ],
+  "features": [
+    "Verify base rates, discounts, and accessorials",
+    "Ensure tax/fee compliance",
+    "Detect duplicates and confirm accuracy pre‑pay",
+    "Scenario modeling and carrier comparisons",
+    "SKU-level cost-to-serve analysis"
+  ],
+  "cta": { "label": "See how much you're overpaying", "href": "/contact" }
+}
+

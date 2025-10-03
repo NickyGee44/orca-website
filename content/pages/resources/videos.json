@@ -1,0 +1,15 @@
+{
+  "seo": {
+    "title": "Videos | Orca Intelligence Inc",
+    "description": "Video resources: Orca explainer and client stories.",
+    "canonical": "/media"
+  },
+  "items": [
+    {
+      "title": "Orca Explainer Video",
+      "thumbnail": "/Main-7-800x445.png",
+      "src": "/mediaio_orca-explainervideo_0330.mp4"
+    }
+  ]
+}
+

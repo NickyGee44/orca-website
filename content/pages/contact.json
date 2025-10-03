@@ -1,0 +1,16 @@
+{
+  "seo": {
+    "title": "Contact Orca Intelligence",
+    "description": "Book a 20‑min assessment or talk to sales.",
+    "canonical": "/contact"
+  },
+  "heading": "Ready to See Your Savings?",
+  "blurb": "Let's run a free savings analysis and show you what we'll recover in 90 days.",
+  "cta": { "label": "Book a 20‑min Assessment", "href": "#form" },
+  "contact": {
+    "phone": "1.833.211.1197",
+    "email": "info@orca.bi",
+    "address": "345 Ridout St N, London, ON N6A 2N8, Canada"
+  }
+}
+
