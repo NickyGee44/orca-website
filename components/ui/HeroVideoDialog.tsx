@@ -21,7 +21,13 @@ interface HeroVideoProps {
   className?: string;
 }
 
-const animationVariants: Record<string, { initial: Record<string, unknown>; animate: Record<string, unknown>; exit: Record<string, unknown> }> = {
+type AnimationVariant = {
+  initial: { y?: string | number; x?: string | number; scale?: number; opacity?: number };
+  animate: { y?: string | number; x?: string | number; scale?: number; opacity?: number };
+  exit: { y?: string | number; x?: string | number; scale?: number; opacity?: number };
+};
+
+const animationVariants: Record<string, AnimationVariant> = {
   "from-bottom": {
     initial: { y: "100%", opacity: 0 },
     animate: { y: 0, opacity: 1 },
