@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { navConfig } from "../../config/nav";
 import { BentoCard, BentoGrid } from "../../components/ui/BentoGrid";
 
@@ -36,6 +35,7 @@ export default function ServicesPage() {
                 description={c.description ?? "Click to explore"}
                 background={c.image ? (
                   <div className="absolute inset-0 opacity-20">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={c.image} alt="" className="h-full w-full object-cover grayscale" />
                   </div>
                 ) : undefined}

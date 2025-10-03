@@ -4,7 +4,7 @@ import path from "path";
 export type Seo = { title: string; description: string; canonical?: string };
 export type HeroCta = { label: string; href: string };
 export type Hero = { title: string; subtitle: string; primaryCta?: HeroCta; secondaryCta?: HeroCta };
-export type HomeContent = { seo: Seo; hero: Hero; aboutTeaser?: any; testimonial?: { title: string; quote: string; cite: string } };
+export type HomeContent = { seo: Seo; hero: Hero; aboutTeaser?: { title?: string; subtitle?: string; body?: string; cta?: { label?: string; href?: string } }; testimonial?: { title: string; quote: string; cite: string } };
 export type BlogPost = { title: string; blurb: string; image: string; href: string };
 export type BlogContent = { seo: Seo; posts: BlogPost[] };
 export type FAQItem = { q: string; a: string };
